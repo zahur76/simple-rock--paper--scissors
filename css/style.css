@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Reggae+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap');
+
+body {
+    text-decoration: none;
+    background: lightsalmon;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Marcellus SC', serif;
+}
+
+img {
+    width: 150px;
+    height: 200px;    
+}
+
+.header {
+    height: 60px;
+    background: lightgray;
+    line-height: 60px;
+    text-align: center;    
+    font-size: 30px;
+    font-family: 'Reggae One', cursive;
+}
+
+.modal-title, .modal-finish {
+    font-size: 30px;
+    font-family: 'Reggae One', cursive;    
+}
+
+.text-center {
+    margin: 0 auto;
+}
+
+.modal-content {   
+    background-color: rgba(176, 183, 192, 0.8) !important;       
+}
+
+.modal-header {
+    height: 250px;
+    border: 1px solid black;
+    justify-content: center;   
+}
+
+.game-finish {
+    display: block;
+}
+
+.image-selection {
+    margin: 100px 0 100px 0;
+}
+
+.game-selection {
+    justify-content: center;
+    height: 350px;
+}
+
+.arrow-left {
+    text-decoration: none !important;
+    height: 100px
+}
+
+.arrow-right {
+    text-decoration: none !important;
+    height: 100px;
+}
+
+a .fas {    
+    font-size: 40px;
+    color: black;    
+}
+
+a .fas:hover {        
+    color: rgb(133, 128, 128);
+}
+
+.user-image, .computer-image {
+    width: 70px;
+    height: 70px;
+}
+
+.col-6 .fas {
+    font-size: 30px;
+}

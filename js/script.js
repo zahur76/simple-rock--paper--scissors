@@ -17,7 +17,8 @@ $( document ).ready(function() {
     
     gameOn()
 
-    function gameOn() {             
+    function gameOn() { 
+                        
         $(".image-selection").attr('value', '1');
         $(".selected-image").attr('src', "images/paper.svg");                          
         
@@ -46,7 +47,7 @@ $( document ).ready(function() {
         // Logic to change images using right arrow
         $('.arrow-right').click(function(){
             document.getElementById("myAudio1").play(); 
-            imageNumber=$(".image-selection").attr('value');            
+            imageNumber=$(".image-selection").attr('value');                      
             if(imageNumber==='1'){
                 $(".image-selection").attr('value', '2');
                 imageNumber='2'; 
@@ -72,7 +73,7 @@ $( document ).ready(function() {
                 keyboard: false
             })
             $("#finish").modal('show');
-             
+            imageNumber=$(".image-selection").attr('value');
             computerChoice=Math.floor((Math.random() * 3) + 1);                      
             // Logic to decide winner
             if(imageNumber==='1' && computerChoice===1){
@@ -105,17 +106,14 @@ $( document ).ready(function() {
 
             let userSymbol=userArray[imageNumber]
             let computerSymbol=computerArray[computerChoice]
-
-            console.log(userSymbol)
-            console.log(computerSymbol)
-
+            
             $(".user-image").attr("src","images/" + userSymbol + ".svg");
 
             $(".computer-image").attr('src', "images/" + computerSymbol + ".svg");         
         }) 
         
         // Restart game 
-        $(".game-finish").click(function(){                                                                             
+        $(".game-finish").click(function(){                                                                                  
             gameOn();                        
         })
     }    
